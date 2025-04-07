@@ -1,16 +1,97 @@
+Create a Book Library using HTML and CSS
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+        }
+        .book-library {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 60%;
+        }
+        .book {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .book:last-child {
+            border-bottom: none;
+        }
+        .book img {
+            margin-left: 120px;
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .book h2 { /* Changed from h3 to h2 */
+            margin: 10px 0 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .book p {
+            color: #777777;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .price {
+            background-color: #2ecc71;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>Book Library</h1>
+    <div class="book-library">
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
+            <h2>Spy in the Amber</h2>
+            <p>By Manohar Malgonkar</p>
+            <div class="price">Rs. 299</div>
+        </div>
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
+            <h2>Sacred Games</h2>
+            <p>By Vikram Chandra</p>
+            <div class="price">Rs. 199</div>
+        </div>
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
+            <h2>Byomkesh Bakshi</h2>
+            <p>By Sharadindu Bandyopadhyay</p>
+            <div class="price">Rs. 249</div>
+        </div>
+    </div>
 </body>
-
 </html>
